@@ -1,38 +1,68 @@
 ﻿# AI Finance Agent Team with Web Access
 
-This script demonstrates how to build a team of AI agents that work together as a financial analyst using GPT-4o in just 20 lines of Python code. The system combines web search capabilities with financial data analysis tools to provide comprehensive financial insights.
+A multi-agent AI system that works as a collaborative financial analyst — powered by GPT-4o, real-time web search, and live market data. Built in under 20 lines of Python.
+
+---
+
+## Overview
+
+This project spins up a team of specialized AI agents that coordinate with each other to research, analyze, and summarize financial information on demand. Whether you want a stock breakdown, market trends, or company insights — the agent team handles it end to end.
+
+---
 
 ## Features
 
-Multi-agent system with specialized roles:
-* **Web Agent** for general internet research
-* **Finance Agent** for detailed financial analysis
-* **Team Agent** for coordinating between agents
-* Real-time financial data access through YFinance
-* Web search capabilities using DuckDuckGo
-* Persistent storage of agent interactions using SQLite
+- **Web Agent** — Searches the internet for the latest news and general research
+- **Finance Agent** — Pulls real-time stock data, financials, and market metrics via YFinance
+- **Team Agent** — Orchestrates the other agents and synthesizes their outputs
+- Live financial data via **YFinance**
+- Web search powered by **DuckDuckGo**
+- Conversation history stored with **SQLite**
 
-## How to get Started?
+---
 
-1. Clone your repository:
+## Getting Started
+
+### 1. Clone the repository
+
 `ash
 git clone https://github.com/karishmaram-tech/ai_finance_agent_team.git
 cd ai_finance_agent_team
 `
 
-2. Install the required dependencies:
+### 2. Install dependencies
+
 `ash
 pip install -r requirements.txt
 `
 
-3. Set your OpenAI API key as an environment variable:
+### 3. Set your OpenAI API key
+
 `ash
 export OPENAI_API_KEY='your-api-key-here'
 `
 
-4. Run the team of AI Agents:
+### 4. Run the agent team
+
 `ash
 python3 finance_agent_team.py
 `
 
-Open your web browser and navigate to the URL provided in the console output to interact with the team of AI agents through the playground interface.
+Open the URL shown in your terminal to interact with the agents through the playground interface.
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| GPT-4o | Core LLM powering all agents |
+| YFinance | Real-time stock and financial data |
+| DuckDuckGo | Web search for news and research |
+| SQLite | Persistent storage of agent interactions |
+
+---
+
+## Author
+
+Built by [karishmaram-tech](https://github.com/karishmaram-tech)
